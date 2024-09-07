@@ -1,0 +1,19 @@
+.border{
+    color:aqua;
+    margin: 50px;
+    position: relative;
+    border: solid 1px black;
+    border-radius: 10px;
+    text-align: center;
+}
+.border::before{
+    content:"";
+    position:absolute;
+    top:5px;
+    bottom:5px;
+    left:5px;
+    right:5px;
+    background:pink;
+    z-index:-1;
+    border-radius: 10px;
+}
